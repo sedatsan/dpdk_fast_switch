@@ -1,4 +1,5 @@
 # DPDK Fast Switch
+[![Agentic AI Ready](https://img.shields.io/badge/Agentic_AI_Ready-AGENTS.md-blue)](AGENTS.md)
 
 > **Project Summary:**  
 > A Layer 2 fast-path switch built in C11 using the Data Plane Development Kit (DPDK). It demonstrates deep understanding of `rte_mbuf` zero-copy lifecycle management and fast MAC address learning using `rte_hash`. It streams live port statistics via IPC and conforms to strict DPDK C standards with a Pitchfork layout and CMake toolchain.
@@ -50,3 +51,6 @@ Requires `root` privileges to initialize DPDK EAL and allocate hugepages.
 ```bash
 sudo ./dpdk_fast_switch -c 0x3 -n 4
 ```
+
+## Agentic AI Development
+This repository is fully compliant with the [AGENTS.md](https://agents.md) open standard. It includes strict, drop-in operating instructions designed to correctly guide autonomous AI coding agents (such as Cursor, Devin, Copilot, or Antigravity) across the C11 and DPDK constraints of this codebase. By providing explicit boundaries, the AI is prevented from hallucinating architectural decisions or making non-deterministic fast-path memory allocations.

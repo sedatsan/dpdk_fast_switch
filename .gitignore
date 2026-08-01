@@ -1,6 +1,5 @@
 build/
 node_modules/
-AGENTS.md
 .DS_Store
 *.o
 *.a
