@@ -34,6 +34,17 @@ cmake ..
 cmake --build .
 ```
 
+### Docker (Cloud Native Network Function - CNF)
+To run this switch as a containerized network function, build the provided Dockerfile:
+
+```bash
+docker build -t dpdk_fast_switch .
+docker run --rm --privileged \
+  -v /sys/bus/pci:/sys/bus/pci \
+  -v /sys/kernel/mm/hugepages:/sys/kernel/mm/hugepages \
+  dpdk_fast_switch -c 0x3 -n 4
+```
+
 ## Usage
 Requires `root` privileges to initialize DPDK EAL and allocate hugepages.
 ```bash
